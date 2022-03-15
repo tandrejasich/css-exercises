@@ -1,0 +1,12 @@
+
+/*descendant combinators shows relationship
+set this by having a space in between.
+This will only match the last mentioned selector
+if they have a hierarchical descendant*/
+
+.container .text{
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
