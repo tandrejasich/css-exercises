@@ -5,7 +5,51 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /*set flex display to column to stack flex items*/
+  display: flex;
+  flex-direction: column;
 }
+
+.left-links, .right-links{
+  display: flex;
+  /*remove bullet points from list*/
+  list-style-type: none;
+  /*set gaps between list items*/
+  gap: 8px;
+  /*set padding*/
+  padding: 16px;
+  /*remove margins*/
+  margin: 0px;
+}
+
+.header{
+  display: flex;
+  /*set links to opposite sides*/
+  justify-content: space-between;
+  /*fix to top*/
+  margin-bottom: auto;
+}
+
+.content{
+  display: flex;
+  /*stack items on top*/
+  flex-direction: column;
+  /*center overall content section*/
+  align-content: center;
+  /*align individual items to center*/
+  align-items: center;
+}
+
+.footer{
+  display: flex;
+  /*set to lock left and right*/
+  justify-content: space-between;
+  /*fix to bottom of page*/
+  margin-top: auto;
+  /*set background color*/
+  background-color: rgb(245, 245, 240);
+}
+
 
 img {
   width: 600px;
@@ -16,6 +60,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
 }
 
 input {
@@ -24,4 +69,10 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+a {
+  /*remove hyperlink view of links*/
+  text-decoration: none;
+  color: inherit;
 }

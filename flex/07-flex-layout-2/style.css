@@ -2,27 +2,84 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  /*enable flex and set direction to column*/
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  /*set padding from left of screen*/
+  padding-left: 16px;
+  /*leverage flex to enable alignment*/
+  display: flex;
+  /*sets item to center of header*/
+  align-items: center;
+  /*fix header to top of screen*/
+  margin-bottom:auto;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  /*fix footer to bottom of screen*/
+  margin-top: auto;
+  /*leverage flex to set subsequent items*/
+  display: flex;
+  /*aligns text to middle of flex item horizontally*/
+  justify-content: center;
+  /*aligns text to middle of flex item vertically*/
+  align-items: center;
+}
+
+.main-page{
+  /*align main page horizontally*/
+  display: flex;
+  /*set flex container to cover main area*/
+  flex:1
 }
 
 .sidebar {
-  width: 300px;
+  min-width: 300px;
   background: royalblue;
+  font-size: 24px;
+  color: white;
+  padding: 0px 16px 16px 16px;
+  /*prevents sidebar from disappearing*/
+  flex-shrink: 0;
+}
+
+a{
+  /*text decoration removes hyperlink underline styling*/
+  text-decoration: none;
+  /*color to inheret allows upper class to set color*/
+  color: inherit;
+  font-size: 24px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  /*set padding around cards to 32em*/
+  padding: 16px;
+  margin: 16px;
+  /*sets overall card size*/
+  width: 300px;
+}
+
+.cards{
+  /*set to horizontal alignment via flex*/
+  display: flex;
+  /*added wrap to make sure things went over page*/
+  flex-wrap: wrap;
+  /*padding around complete section*/
+  padding: 32px;
+  flex-shrink: 1;
+
 }
