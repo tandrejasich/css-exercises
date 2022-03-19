@@ -1,6 +1,10 @@
 .header  {
+  display: flex;
   font-family: monospace;
   background: papayawhip;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .logo {
@@ -8,12 +12,16 @@
   font-weight: 900;
   color: tomato;
   background: white;
-  padding: 4px 32px;
+  padding: 2px 32px;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  gap: 8px;
 }
 
 a {
@@ -23,3 +31,10 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+
+
+/* create flex containers and items
+1 for banner
+left set,
+item 
+right set*/
